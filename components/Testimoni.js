@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 // import react slick
 import Slider from "react-slick";
+import { TwitterTweetEmbed } from "react-twitter-embed";
 import Image from "next/image";
 import Stars from "../public/assets/Icon/stars.svg";
 import ArrowBack from "../public/assets/Icon/eva_arrow-back-fill.svg";
@@ -164,6 +165,7 @@ const Testimoni = ({
     },
   ],
 }) => {
+  const dian = [1,2,3];
   const settings = {
     dots: true,
     customPaging: function (i) {
@@ -227,11 +229,11 @@ const Testimoni = ({
         className="flex"
         autoplay={true}
       >
-        {Tweets?.map((item, index) => (
+        {dian?.map((item, index) => (
           <div className="px-3 flex items-stretch" key={index}>
             <div className="border-2 border-gray-500 hover:border-red-500 transition-all rounded-lg p-5 flex flex-col">
               <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
-                <TweetEmbed tweetId={item.disaster_tweet_ids[5]} />
+                <TweetEmbed tweetId={"1639825543020392448"} />
               </div>
             </div>
           </div>

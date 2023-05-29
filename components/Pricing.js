@@ -201,7 +201,10 @@ const Pricing = () => {
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper className="w-full flex flex-col py-12">
             <motion.div variants={scrollAnimation}>
-              <Testimoni />
+              {/* <Testimoni /> */}
+              <div className="flex justify-center">
+              <img src="https://www.ualberta.ca/psychiatry/media-library/images/misc-pic/under-development.jpg" />
+              </div>
             </motion.div>
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper className="relative w-full mt-16">
