@@ -29,7 +29,7 @@ const dashboard = () => {
           email: email,
           ngo: auth.currentUser?.displayName,
           user: user,
-          link: `https://web-production-07e8.up.railway.app/chat.html?name=${user}&room=${uniq}`,
+          link: `https://socket-chat.up.railway.app/chat.html?name=${user.trim()}&room=${uniq}`,
         },
         "gP8sKnDLte9gp24k2"
       )
