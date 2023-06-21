@@ -36,7 +36,7 @@ const dashboard = () => {
       .then(function (response) {
         console.log("SUCCESS!", response.status, response.text);
         window.open(
-          `https://web-production-07e8.up.railway.app/chat.html?name=${auth.currentUser?.displayName}&room=${uniq}`,
+          `https://socket-chat.up.railway.app/chat.html?name=${auth.currentUser?.displayName}&room=${uniq}`,
           "_blank"
         );
         setemail("");
